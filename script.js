@@ -45,9 +45,9 @@ function processSequences(sequences) {
         alert("Too many sequences. Please provide 16 sequences or less.");
         return;  // Stop processing
     }
-    
+
     // Send sequences to Python script using fetch API
-    fetch('https://9529-59-102-175-111.ngrok-free.app/process_sequence', {
+    fetch('https://akasaka-i.github.io/Bio_Hw3/process_sequence', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
